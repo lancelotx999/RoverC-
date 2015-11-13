@@ -20,6 +20,7 @@ public:
     void SetSafety(int SafetySetting);
     
     virtual void DeviceFunction();
+    virtual Devices* clone() const;
     
 private:
     

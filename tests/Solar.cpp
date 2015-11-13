@@ -38,3 +38,7 @@ void Solar::DeviceFunction()
     
 }
 
+Devices* Solar::clone() const
+{
+    return new Solar(*this);
+}

@@ -18,7 +18,7 @@ public:
     virtual ~Radar();
     
     virtual void DeviceFunction();
-    virtual Radar Clone();
+    virtual Devices* clone() const;
     
 //    void RadarFunction();
 private:

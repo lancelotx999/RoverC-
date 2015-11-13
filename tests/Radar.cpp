@@ -62,13 +62,8 @@ void Radar::DeviceFunction()
     
 }
 
-Radar Radar::Clone()
+Devices* Radar::clone() const
 {
-    Radar* CloneRadar = this;
-    
-    return *CloneRadar;
-    
-    //this->N = ob.N:
-    //this->x = new int[this->N];
+    return new Radar(*this);
 }
 

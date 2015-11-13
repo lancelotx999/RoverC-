@@ -53,4 +53,9 @@ void Drill::DeviceFunction()
     
 }
 
+Devices* Drill::clone() const
+{
+    return new Drill(*this);
+}
+
 

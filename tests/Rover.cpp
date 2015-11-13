@@ -11,7 +11,7 @@
 Rover::Rover() 
 {
     DeviceCount = 0;
-    RoverObject = new Object();
+    //RoverObject = new Object();
 }
 
 Rover::Rover(const Rover& orig) 
@@ -22,10 +22,10 @@ Rover::Rover(const Rover& orig)
     
     for(int x = DeviceCount-1; x != -1; x--)
     {
-        ListOfDevice[x] = orig.ListOfDevice[x];
+        ListOfDevice[x] = orig.ListOfDevice[x]->clone();
     }
     
-    RoverObject = orig.RoverObject;
+    //RoverObject = orig.RoverObject;
 }
 
 Rover::~Rover() 
@@ -36,7 +36,7 @@ Rover::~Rover()
         delete ListOfDevice[x];
     }
     
-    delete RoverObject;
+    //delete RoverObject;
     
 }
 

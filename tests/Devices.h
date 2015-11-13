@@ -23,7 +23,7 @@ public:
     Battery* GetBattery() const;
     
     virtual void DeviceFunction() = 0;
-    
+    virtual Devices* clone() const = 0;
     //virtual void Clone() = 0;
     
 private:

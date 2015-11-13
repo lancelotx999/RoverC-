@@ -18,6 +18,7 @@ public:
     virtual ~Solar();
     
     virtual void DeviceFunction();
+    virtual Devices* clone() const;
     
 private:
 
